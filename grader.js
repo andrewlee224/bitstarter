@@ -10,6 +10,7 @@ var fs = require("fs");
 var program = require("commander");
 var cheerio = require("cheerio");
 var rest = require("restler");
+var url = require("url");
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
 
@@ -35,7 +36,7 @@ var loadChecks = function(checksfile) {
 };
 
 var checkHtmlFile = function(src, checksfile, isUrl) {
-  if (!isUrl) {
+  if (isUrl != true) {
     $ = cheerioHtmlFile(src);
   } else {
     $ = cheerioHtmlText(src);
@@ -56,6 +57,7 @@ var clone = function(fn) {
 
 var getContent = function(url, callback) {
   rest.get(url).on('complete', function(result) {
+    console.log(result);
     callback(result);
   });
 };
@@ -71,8 +73,18 @@ if(require.main == module) {
     .parse(process.argv);
   console.log(program.url);
   var source = "";
-  if (program.url != null) {
-    getContent(program.url, function(result) {
+  if (program.url) {
+    var urlObj = url.parse(program.url);
+    var urlStr = "";
+    console.log("Host: " + urlObj.host);
+      if (!urlObj.protocol) {
+        urlObj.protocol = 'http:';
+        console.log("Added protocol: " + urlObj.protocol);
+        urlStr = url.format(urlObj);
+        console.log("New url string: " + urlStr);
+      }
+
+    getContent(urlStr, function(result) {
       source = result;
 
       var checkJson = checkHtmlFile(source, program.checks, true);
