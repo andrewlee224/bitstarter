@@ -97,6 +97,21 @@
       .footer a {
         color: #ccccff;
       }
+      /* Font Awesome modifications */
+
+      .big-green {
+        font-size: 20em;
+        color: #46a546;
+      }
+
+      .pic-size {
+        border: solid 1px #eeeeee;
+        width: 480px;
+        height: 300px;
+        text-align: center;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
     </style>
   </head>
   <body>
@@ -131,20 +146,25 @@
 
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>Motiv8</h1>
         </div>
       </div>
 
       <div class="row-fluid subheading">
         <div class="span12">
-          <p class="lead">One sentence description.</p>
+          <p class="lead">Find someone to accomplish your goal with.</p>
         </div>
       </div>
 
 
       <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+        <div class="span5 offset1 copy copy-right">
+          <p>
+          If you are looking for people who share your goals, you have come to the
+          right place. We know it may be hard to muster up enough willpower on your own.
+          That's why we plan to empower you with access to other people and their experiences, 
+          who in turn can provide you with a "kick in the butt" to get you going.
+          </p>
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order and share buttons -->
@@ -158,12 +178,12 @@
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>$6000</h3> <p>of $15,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                  <h3>10</h3> <p>days left</p>
+                  <h3>30</h3> <p>days left</p>
                 </div>
               </div>
             </div>
@@ -187,11 +207,16 @@
     <!-- Marketing copy -->
     <div class="row-fluid section">
       <div class="span5 offset1 asset">
-        <img class="img-polaroid" src="http://placehold.it/480x300">
+        <img class="img-polaroid" src="pics/champion.jpg">
       </div>
       <div class="span5 copy">
         <p>
-          Motiv8 marketing copy
+        The process works as follows:
+        <ol>
+          <li>Sign up and declare your goal</li>
+          <li>Based on your personal data, statistics, and cooperation model, our web application assigns you a partner</li>
+          <li>Report your own progress, and assess your partner's progress. Share advice on pursuing your goal effectively</li>
+        </ol>
         </p>
       </div>
     </div>
@@ -199,11 +224,17 @@
     <div class="row-fluid section2">
       <div class="span5 offset1 copy copy-right">
         <p>
-          Motiv8 marketing copy
+          There are two possible cooperation models, each suited for different activities:
+          <ol>
+            <li> Location-dependent - your partner is chosen by location, among other factors. This way you can organize meetups 
+            and possibly physically collaborate on your goal</li>
+            <li> Location-independent - your partner is chosen independently of their location. All the feedback and assessment is done
+            via our web application
+          </ol> 
         </p>
       </div>
-      <div class="span5 asset">
-        <img class="img-polaroid" src="http://placehold.it/480x300">
+      <div class="span5 asset pic-size">
+        <i class="icon-thumbs-up big-green"></i>
       </div>
     </div>
 
@@ -216,12 +247,14 @@
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse"
                 data-parent="#accordion2" href="#collapseOne">
-                What does FAQ stand for?
+               Does this really work? 
               </a>
             </div>
             <div id="collapseOne" class="accordion-body collapse">
               <div class="accordion-inner">
-                Frequently Asked Question.
+                Short answer - yes. <br /> Long answer - there is a well-documented psychological phenomenon called
+                Kohler Effect. In short, it means that people want to achieve the level of competence of those 
+                they interact with.
               </div>
             </div>
           </div>
@@ -229,12 +262,15 @@
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse"
                 data-parent="#accordion2" href="#collapseTwo">
-                What's a Frequently Asked Question?
+               I'm interested. Any interesting studies to read up? 
               </a>
             </div>
             <div id="collapseTwo" class="accordion-body collapse">
               <div class="accordion-inner">
-                A question which is commonly asked by users.
+                There has been a study done by B. Irwin of Michigan State's University Department of Kinesiology in which
+                the performance of exercising participants was measured. It turned out that when participants exercised while
+                watching a live broadcast of their exercising partner, their performance levels increased greatly. So it's worth
+                noting that exercising partners located at fairly large distances can still reap benefits of shared motivation.
               </div>
             </div>
           </div>
