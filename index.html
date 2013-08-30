@@ -4,46 +4,46 @@
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link type="text/css" rel="stylesheet"
+      href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" 
+      rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,
+      700,800" rel="stylesheet" type="text/css">
     <style type="text/css">
-
       /* Large desktop */
-      @media (min-width: 980px) { 
+      @media (min-width: 980px) {
         body {
-         padding-top: 60px;
+          padding-top: 60px;
         }
-       .linediv-l {
-         border-right: 1px white solid;
+        .linediv-l {
+          border-right: 1px white solid;
         }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
+        .linediv-r {
+          border-left: 1px white solid;
+        }
       }
 
       /* Landscape phones and down */
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
+      @media (max-width: 480px) {
+        .copy {
+          padding: 2.5% 10%;
+        }
+        .linediv-l {
+          border-bottom: 1px white solid;
+        }
+        .linediv-r {
+          border-top: 1px white solid;
+        }
       }
-
       /* All form factors */
 
       /* Main body and headings */
-      body{
+      body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
@@ -97,17 +97,32 @@
       .footer a {
         color: #ccccff;
       }
+      /* Font Awesome modifications */
+
+      .big-green {
+        font-size: 20em;
+        color: #46a546;
+      }
+
+      .pic-size {
+        border: solid 1px #eeeeee;
+        width: 480px;
+        height: 300px;
+        text-align: center;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
     </style>
   </head>
   <body>
 
-    <!-- Mobile-friendly navbar adapted from example. -->
-    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <!-- Mobile-friendly navbar adpated from example -->
+
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar"
-                  data-toggle="collapse" data-target=".nav-collapse">
+            data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -119,183 +134,161 @@
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div> <!-- /.nav-collapse -->
         </div>
       </div>
     </div>
 
+
     <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-    <!-- http://stackoverflow.com/a/12270322 -->
+
     <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product: Development Version</h1>
-        </div>
-      </div> 
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <h1>Motiv8</h1>
         </div>
       </div>
+
+      <div class="row-fluid subheading">
+        <div class="span12">
+          <p class="lead">Find someone to accomplish your goal with.</p>
+        </div>
+      </div>
+
+
       <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
+        <div class="span5 offset1 copy copy-right">
+          <p>
+          If you are looking for people who share your goals, you have come to the
+          right place. We know it may be hard to muster up enough willpower on your own.
+          That's why we plan to empower you with access to other people and their experiences, 
+          who in turn can provide you with a "kick in the butt" to get you going.
+          </p>
         </div>
 
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <!-- We define a new 'actions' div to contain statistics, order and share buttons -->
         <div class="span5 actions">
-          <div class="row-fluid">
+		<div class="row-fluid">
           <div class="span8 offset2">
             <div class="row-fluid statistics">
               <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
                 <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                  <h3>1000</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>$6000</h3> <p>of $15,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
+                  <h3>30</h3> <p>days left</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row-fluid">
+		  <div class="row-fluid">
           <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
               <div class="bar bar-success" style="width: 60%;"></div>
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
+		  </div>
           </div>
-          </div>
-          <div class="row-fluid">
+		  <div class="row-fluid">
           <div class="span6 offset3 order">
-            <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
-          </div>
-          <div class="row-fluid">
+		  </div>
+		  <div class="row-fluid">
           <div class="span8 offset2 social">
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-          </div>
-          </div>
+		  </div>
+		  </div>
+		</div>
         </div>
-        </div>
-      </div>
+    </div>
 
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
-        </div>
-        <div class="span5 copy">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
+    <!-- Marketing copy -->
+    <div class="row-fluid section1">
+      <div class="span5 offset1 asset">
+        <img class="img-polaroid" alt="People" src="pics/champion.jpg">
       </div>
-
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
-        </div>
+      <div class="span5 copy">
+        <p>
+        The process works as follows:
+        <ol>
+          <li>Sign up and declare your goal</li>
+          <li>Based on your personal data, statistics, and cooperation model, our web application assigns you a partner</li>
+          <li>Report your own progress, and assess your partner's progress. Share advice on pursuing your goal effectively</li>
+        </ol>
+        </p>
       </div>
+    </div>
 
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
-                  </div>
-                </div>
+    <div class="row-fluid section2">
+      <div class="span5 offset1 copy copy-right">
+        <p>
+          There are two possible cooperation models, each suited for different activities:
+          <ol>
+            <li> Location-dependent - your partner is chosen by location, among other factors. This way you can organize meetups 
+            and possibly physically collaborate on your goal</li>
+            <li> Location-independent - your partner is chosen independently of their location. All the feedback and assessment is done
+            via our web application
+          </ol> 
+        </p>
+      </div>
+      <div class="span5 asset pic-size">
+        <i class="icon-thumbs-up big-green"></i>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="row-fluid faq">
+      <div class="span10 offset1">
+        <h3>FAQ</h3>
+        <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseOne">
+               Does this really work? 
+              </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse">
+              <div class="accordion-inner">
+                Short answer - yes. <br /> Long answer - there is a well-documented psychological phenomenon called
+                Kohler Effect. In short, it means that people want to achieve the level of competence of those 
+                they interact with.
               </div>
             </div>
           </div>
-
-      </div>
-
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+          <div class="accordion group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseTwo">
+               I'm interested. Any interesting studies to read up? 
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                There has been a study done by B. Irwin of Michigan State's University Department of Kinesiology in which
+                the performance of exercising participants was measured. It turned out that when participants exercised while
+                watching a live broadcast of their exercising partner, their performance levels increased greatly. So it's worth
+                noting that exercising partners located at fairly large distances can still reap benefits of shared motivation.
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="row-fluid footer">
+      <div class="span12">
+        <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>
       </div>
     </div>
   </body>
